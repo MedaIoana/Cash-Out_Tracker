@@ -1,0 +1,30 @@
+.chart {
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+  width: 0;
+  margin-bottom: 100px;
+  margin-left: 650px;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .chart {
+    margin-left: 475px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .chart {
+    margin-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .chart {
+    margin-left: 350px;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,28 @@
+.expense-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  //margin: 1.5rem 0;
+  background-color: rgb(43, 56, 66);
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 90%;
+  border-radius: 30px;
+  box-shadow: 5px 3px 20px #333333;
+  margin: 40px;
+  margin-top: 10px;
+  .item-date {
+    margin: 0;
+    background-color: rgb(43, 56, 66);
+  }
+  .item-name {
+    margin: 0;
+    background-color: rgb(43, 56, 66);
+  }
+  .item-price {
+    margin: 15px;
+    background-color: rgb(43, 56, 66);
+  }
+}

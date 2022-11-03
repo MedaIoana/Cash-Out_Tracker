@@ -1,0 +1,41 @@
+* {
+  background-color: rgb(37, 47, 56);
+  margin: 50px;
+}
+.expense {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 3px 20px #4b4b4b;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 30px;
+  background-color: rgb(43, 56, 66);
+  font-weight: bold;
+  font-size: 1.8em;
+  .date {
+    margin: 15px;
+    background-color: rgb(43, 56, 66);
+  }
+  .name {
+    margin: 15px;
+    background-color: rgb(43, 56, 66);
+  }
+  .price {
+    margin: 15px;
+    background-color: rgb(43, 56, 66);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  * {
+    margin: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  * {
+    margin: 20px;
+  }
+}

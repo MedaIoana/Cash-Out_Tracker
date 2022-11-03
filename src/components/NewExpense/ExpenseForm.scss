@@ -1,0 +1,119 @@
+.expense-form {
+  background-color: rgb(153, 122, 238);
+  display: flex;
+  //flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+  .wrapper-expense-form {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    background-color: rgb(153, 122, 238);
+    margin: 0;
+    margin-bottom: 10px;
+    .new-expense__control {
+      background-color: rgb(153, 122, 238);
+      margin: 0;
+    }
+    .new-expense__control label {
+      margin: 25px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 0;
+      display: block;
+      background-color: rgb(153, 122, 238);
+    }
+    .new-expense__control input {
+      margin: 25px;
+      font: inherit;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 20rem;
+      max-width: 100%;
+      color: #ccc;
+    }
+  }
+  .add-expense-btn {
+    text-align: center;
+    background-color: rgb(153, 122, 238);
+    margin: 0;
+    .add-btn {
+      margin: 0;
+      margin-left: 10px;
+      margin-top: 60px;
+      font: inherit;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border: 1px solid #3b1c63;
+      background-color: #3b1c63;
+      color: white;
+      border-radius: 12px;
+    }
+  }
+  .add-expense-btn button:hover,
+  .add-expense-btn button:active {
+    background-color: #510674;
+    border-color: #510674;
+  }
+
+  .add-expense-btn button.alternative {
+    color: #220131;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .add-expense-btn button.alternative:hover,
+  .add-expense-btn button.alternative:active {
+    background-color: #ddb3f8;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .expense-form {
+    .wrapper-expense-form {
+      grid-template-columns: repeat(2, 3fr);
+      margin-left: 150px;
+      .new-expense__control input {
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .expense-form {
+    .wrapper-expense-form {
+      //grid-template-columns: repeat(2, 3fr);
+      margin-left: 140px;
+      .new-expense__control input {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+    .add-expense-btn {
+      text-align: center;
+      background-color: rgb(153, 122, 238);
+      margin: 0;
+      .add-btn {
+        margin-left: -10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .expense-form {
+    border-radius: 20px;
+    margin-bottom: 70px;
+    .wrapper-expense-form {
+      grid-template-columns: repeat(1, 3fr);
+      margin-left: 200px;
+      .new-expense__control input {
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+    }
+  }
+}
